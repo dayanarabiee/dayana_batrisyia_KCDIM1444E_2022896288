@@ -1,0 +1,188 @@
+<html>
+<head>
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<header>
+<a name="TOP_PAGE">
+  <div class="logo">
+  <h2><img src="image/logo.png" width="50%" align="right" alt="Dayana Rabiee" title="Dayana Rabiee - Happy & Move on"> </h2>
+  </div>
+
+<nav>
+<ul>
+<li><a href=index.html>home</a></li>
+<li><a href=myself.html>myself</a></li>
+<li><a href=family.html>family</a></li>
+<li><a href=friends.html>friends</a></li>
+<li><a href=hobby.html>hobby</a></li>
+<li><a href=gallery.html>gallery</a></li>
+<li><a href=education.html>education</a></li>
+<li><a href=zikr.html>zikr</a></li>
+
+</ul>
+</nav>
+</header>
+
+<br><br>
+
+<body>
+<p class="title">
+THE LATEST COLLECTION OF PICTURES FOR EID
+</p>
+
+<P class="subtitle">
+"Cherish yourself and enjoy Eid with your loved ones."
+</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="image/cover.jpg" style="width:100%">
+  <div class="text">First raya</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="image/formal.jpg" style="width:100%">
+  <div class="text">Team Maroon</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="image/myself.jpg" style="width:100%">
+  <div class="text">Second raya</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="image/raya.jpg" style="width:100%">
+  <div class="text">Blue</div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<br><br><br>
+
+<p class="title">
+CREATE INFINITY MOMENTS WITH LOVED ONES 
+</p>
+
+<P class="subtitle">
+"Appreciate the time spent with them and create the most beautiful memories."
+</p>
+
+<main>
+<center>
+<video width="1200px" autoplay muted loop>
+<source src="video/memories.mp4" 
+type="video/mp4">
+</video>
+</center>
+</main>
+<br><br><br><br><br><br>
+<p class="title">
+FAVOURITE VIDEO U TUBE 
+</p>
+
+<P class="subtitle">
+"Enjoy the moment of the random video"
+</p>
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PNt2GpP4TKA?si=Tz5YUYb0Jwvov0Pr&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-DTnL6xBpVg?si=mkFqtoD2XMVB6t9V&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZpCBAVLIo3s?si=AdFVae16XmbNsm-C&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5qIwKDNBFbU?si=GzmZaItGgtsaeZD6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IrQTzjACN8k?si=SHA9LIq7mGGFtcdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</center>
+
+
+<br><br><br><br><br><br>
+
+
+<a href="#TOP_PAGE"> <img src="icon/up.png" width="60px 0" align="right"> </a>
+
+</body>
+
+<br><br><br><br><br><br><br><br><br>
+
+<footer>
+    <h3>&copy: All Right Reserved</h3>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+    <a class="social-icon" href="https://twitter.com/dayanarabiee" target="_blank">
+        <ion-icon name="logo-twitter"></ion-icon>
+    </a>
+
+    <a class="social-icon" href="https://www.tiktok.com/@icemochaaaa?_t=8m7LkxYsCqw&_r=1" target="_blank">
+        <ion-icon name="logo-tiktok"></ion-icon>
+    </a>
+
+    <a class="social-icon" href="https://www.instagram.com/dayaaanaaa__" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+    </a>
+
+    <a class="social-icon" href="https://wa.me/+60182826119" target="_blank">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+    </a>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+</footer>
+</html>
